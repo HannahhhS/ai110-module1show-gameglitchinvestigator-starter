@@ -5,6 +5,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+Game started on normal mode. 
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
@@ -14,9 +15,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Easy Mode  | Number between 0 and 20| Secret num not between 0 and 20 (71). Same for all modes. secret not in ramge| Secret NUmber - 71 |
+| Game over| New game button resets the game after a level has been failed | New Game button does not work to rest. redresh needed | "Game over..." error message |
+| All levels| Number is 25, guess is 50, hint should be lower| Hint says higher. Hint says correctly when a bound like 100 is reached | na/hint says go higher|
 
 ---
 
