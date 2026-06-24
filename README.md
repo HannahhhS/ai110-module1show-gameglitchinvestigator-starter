@@ -26,18 +26,22 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+This game is a sumple number guessing game, in which the computer chooses a random number, and the user has to guess the number
 - [ ] Detail which bugs you found.
+The session state doesnt update correctly for a new game. Furthermore, the hints are incorect, as they are often backwards than what is expected. There are a new minor issues with the ranges of the difficulties as well. 
 - [ ] Explain what fixes you applied.
+The fixes that were applied fixed the high low error and the session state bug, so it correctly stays and updates as needed for a new game. Furthermore, fixes to fix the ranges of each game value were also applied. The game now runs as intented, with correct hints being given 
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+
+1. User enters a guess of 25 (Normal mode)
+2. Game returns "Go HIGHER"
+3. User enters a guess of 35 → "Go HIGHER"
+4. User enters a guess of 40 -> "Go LOWER"
+5. User enters 36, number guess correctly, final score of 15
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -46,8 +50,9 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 ```
 # Paste your pytest output here, e.g.:
 # pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+.....                                                                                                                                           [100%]
+
+============================================================================== 5 passed in 0.02s =======================```
 
 ## 🚀 Stretch Features
 
